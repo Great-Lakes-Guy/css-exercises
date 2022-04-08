@@ -16,10 +16,13 @@ body {
 }
 
 .modal {
+  padding: 15px;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 20px;
 }
 
 .icon {
@@ -30,9 +33,18 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  min-width: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.info {
+  flex-shrink: 1;
+}
+
+.info div {
+  margin-bottom: 5px;
 }
 
 .close-button {
@@ -48,8 +60,16 @@ body {
   justify-content: center;
 }
 
+.top {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
 button {
   padding: 8px 16px;
+  margin-top: 5px;
   border-radius: 8px;
 }
 
